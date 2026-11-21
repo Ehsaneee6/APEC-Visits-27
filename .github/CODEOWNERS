@@ -1,0 +1,9 @@
+# Replace the handles with your team's GitHub usernames.
+/src/components/            @member1
+/src/styles/                @member1
+/src/features/landing/      @member2
+/src/features/results/      @member2
+/src/features/nexus/        @member3
+/src/features/forms/        @member4
+/src/features/admin/        @member4
+/src/lib/                   @member4

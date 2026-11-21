@@ -1,0 +1,51 @@
+/* Design tokens. The only place colors, fonts and spacing are defined.
+   Owner: Member 1. Everyone else: use var(--token), never hard-coded values. */
+:root {
+  /* color */
+  --c-bg: #070304;
+  --c-surface: #12050a;
+  --c-panel: #1a0508;
+  --c-metal: #1b1215;
+  --c-red-300: #ff7a6a;
+  --c-red-400: #ff3b3b;
+  --c-red-500: #d11a28;
+  --c-red-600: #a8141f;
+  --c-red-700: #6a0c14;
+  --c-red-900: #3a070d;
+  --c-gold: #ffd24a;
+  --c-text: #f5efec;
+  --c-text-muted: #e9d4d0;
+  --c-text-dim: #c9a9a5;
+
+  /* type */
+  --f-display: 'Exo 2', sans-serif;
+  --f-body: 'Rajdhani', sans-serif;
+  --f-mono: 'Share Tech Mono', monospace;
+  --fs-300: 0.9375rem;
+  --fs-400: 1.125rem;
+  --fs-500: 1.375rem;
+  --fs-600: clamp(1.75rem, 3vw, 2.5rem);
+  --fs-700: clamp(2.25rem, 5vw, 4rem);
+  --fs-800: clamp(2.75rem, 7vw, 6rem);
+
+  /* space */
+  --s-1: 0.25rem;
+  --s-2: 0.5rem;
+  --s-3: 0.75rem;
+  --s-4: 1rem;
+  --s-5: 1.5rem;
+  --s-6: 2rem;
+  --s-7: 3rem;
+  --s-8: 4rem;
+  --s-9: 6rem;
+
+  /* shape and effects */
+  --r-sm: 6px;
+  --r-md: 10px;
+  --r-lg: 26px;
+  --glow-red: 0 0 28px rgba(255, 40, 40, 0.5);
+  --glow-gold: 0 0 40px rgba(255, 190, 60, 0.35);
+  --shadow-deep: 0 30px 70px #000;
+  --content-max: 1200px;
+  --nav-h: 76px;
+}

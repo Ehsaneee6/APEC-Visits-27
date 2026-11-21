@@ -1,0 +1,10 @@
+.backdrop { position: fixed; inset: 0; z-index: -1; pointer-events: none; overflow: hidden; background: linear-gradient(90deg, #1a0d0f, var(--c-bg) 25%, var(--c-bg) 75%, #1a0d0f); }
+.backdrop__glow { position: absolute; left: 50%; top: 12%; width: min(1100px, 120vw); height: 70vh; transform: translateX(-50%); background: radial-gradient(ellipse, rgba(179, 18, 28, 0.55), rgba(94, 10, 18, 0.25) 35%, transparent 65%); filter: blur(20px); animation: backdrop-breathe 4s ease-in-out infinite; }
+.backdrop__rays { position: absolute; left: 50%; top: 40%; width: 2400px; height: 2400px; transform: translate(-50%, -50%); background: repeating-conic-gradient(from 0deg, rgba(255, 60, 60, 0.14) 0 0.4deg, transparent 0.4deg 5deg); mask-image: radial-gradient(circle, #000 0, transparent 45%); -webkit-mask-image: radial-gradient(circle, #000 0, transparent 45%); }
+.backdrop__neon { position: absolute; top: 0; bottom: 0; width: 6px; background: var(--c-red-400); box-shadow: 0 0 28px 6px var(--c-red-400); opacity: 0.7; }
+.backdrop__neon--l { left: 28px; }
+.backdrop__neon--r { right: 28px; }
+.backdrop__grain { position: absolute; inset: 0; opacity: 0.1; mix-blend-mode: overlay; }
+.backdrop__vignette { position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 40%, transparent 45%, rgba(0, 0, 0, 0.75) 100%); }
+@keyframes backdrop-breathe { 0%, 100% { opacity: 0.75; } 50% { opacity: 1; } }
+@media (max-width: 720px) { .backdrop__neon { display: none; } }

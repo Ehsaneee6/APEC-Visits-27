@@ -1,0 +1,7 @@
+.crt {
+  position: relative; overflow: hidden; padding: var(--s-6);
+  background: var(--c-panel); border: 14px solid var(--c-metal); border-radius: var(--r-lg);
+  box-shadow: 0 0 0 2px var(--c-red-700), var(--shadow-deep), 0 0 70px rgba(220, 30, 40, 0.35);
+}
+.crt__scan { position: absolute; inset: 0; pointer-events: none; background: repeating-linear-gradient(transparent 0 2px, rgba(0, 0, 0, 0.26) 2px 3px); }
+.crt__body { position: relative; }
